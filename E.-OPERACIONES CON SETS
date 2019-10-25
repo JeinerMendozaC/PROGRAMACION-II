@@ -1,0 +1,845 @@
+print("OPERACIONES CON SETS")
+print("1 CREACION DE SETS")
+#1.1 EJERCICIO 1
+S=set()
+print("SET VACIO",S)
+
+#1.2 EJERCICIO 2
+S1=set("4")
+print(S1)
+
+#1.3 EJERCICIO 3
+A={1,2,3,4,5}
+print(A)
+
+#1.4 EJERCICIO 4
+S={1,2,333,3,33,3,3,3,3}
+print(S)
+
+#1.5 EJERCICIO 5
+Z=set("HOOOOLAAAA")
+print(Z)
+
+#1.6 EJERCICIO 6
+s={1,1,1,1,1,1,1,1,1,1}
+print(s)
+
+#1.7 EJERCICIO 7
+A=set(input("ingrese una palabra:"))
+print(A)
+
+#1.8 EJERCICIO 8
+SA=set("SANDIASANDIASANDIA")
+print(SA)
+
+#1.9 EJERCICIO 9
+A={"ALA","BUHO","SAPO"}
+print(A)
+
+#1.10 EJERCICO 10
+A={1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,3,3,3}
+print(A)
+
+print("2 PERTENENCIA")
+#2.1 EJERCICIO 1
+A=set("1235478")
+if "1"in A:
+    print("TRUE")
+
+#2.2 EJERCICIO 2
+S={1,2,3,4,4,4,4}
+if 4 in S:
+    print("TRUE")
+
+#2.3 EJERCICIO 3
+X=set("HOLA")
+if"X" not in X:
+    print("TRUE")
+
+#2.4 EJERCICIO 4
+X1={"HOLA","HERMOSA","DAMA",}
+if "VARON" not in X1:
+    print("TRUE")
+
+#2.5 EJERCICIO 5
+S=set("ABCDE")
+if "A"and "B" in S:
+    print("TRUE")
+
+#2.6 EJERCICIO 6
+s={1,2,3,4,5}
+if 1 not in s:
+    print("FALSE")
+
+#2.7 EJERCICIO 7
+a=set("HABIA UNA VEZ")
+if "B"in a:
+    print("TRUE")
+
+#2.8 EJERCICIO 8
+Z={"A","B","GOL"}
+if "GOL" not in Z:
+    print("FALSE")
+
+#2.9 EJERCICIO 9
+A=input("ingrese un dia de la semana:")
+S={"LUN","MAR","MIE","JUE","VIE","SAB","DOM"}
+A=A.upper()
+if A in S:
+    print("SI ESTA EN LA LISTA")
+else:
+    print("NO ESTA")
+
+#2.10 EJERCICO 10
+MES={"ENE","MAR","ABR","JUN","JUL","NOV"}
+if "FEB"and "MAY" and "AGO"and "SET" not in MES:
+    print("TRUE")
+
+print("3 COMPARACION")
+#3.1 EJERCICIO 1
+T1=set()
+T2=set("FGHJK")
+if T1!=T2:
+    print("TRUE")
+
+#3.2 EJERCICIO 2
+T11=set("GOL")
+T23=set("GOL")
+if T11==T23:
+    print("TRUE")
+
+#3.3 EJERCICIO 3
+T=set()
+S=set()
+if T==S:
+    print("TRUE")
+#3.4 EJERCICIO 4
+D={1,2,3,4}
+S={1,1,1,2,2,3,4}
+if D==S:
+    print("TRUE")
+
+#3.5 EJERCICIO 5
+A=set("GOOOOOL")
+S={"G","O","L"}
+if A==S:
+    print("FALSE")
+
+#3.6 EJERCICIO 6
+X={1,1,1,1,1,12,2,2}
+Y={1,1,1,12,2}
+if X==Y:
+    print("TRUE")
+
+#3.7 EJERCICIO 7
+T=set("ALA")
+S=set("LALALALLALALALA")
+if T==S:
+    print("TRUE")
+
+#3.8 EJERCICIO 8
+T1=set("111222221212221221")
+S1=set("12")
+if T1==S1:
+    print("TRUE")
+
+#3.9 EJERCICIO 9
+T=set("ANANANANANANNANNANANANANAN")
+S=set("BANANA")
+if not T==S:
+    print("TRUE")
+#3.10 EJERCICO 10
+T2={}
+S2=set()
+if T==S:
+    print("TRUE")
+print("4 LONGITUD")
+#4.1 EJERCICIO 1
+S=set()
+print(len(S))
+
+#4.2 EJERCICIO 2
+A=set("GOOOOOL")
+print(len(A))
+
+#4.3 EJERCICIO 3
+S={"G","O","L"}
+print(len(S))
+
+#4.4 EJERCICIO 4
+T0={}
+print(len(T0))
+
+#4.5 EJERCICIO 5
+T21={1,2,3,34,3,33,3,3}
+print(len(T21))
+
+#4.6 EJERCICIO 6
+T211=set("HOOOOOLA")
+print(len(T211))
+
+#4.7 EJERCICIO 7
+T1={1,1,1,1,1,1,1,1}
+print(len(T1))
+
+#4.8 EJERCICIO 8
+T12={"HOOLA","HOOLA","HOOLA","HOLA"}
+print(len(T12))
+
+#4.9 EJERCICIO 9
+S=set("HOOLA")
+T2={"HOOLA"}
+print(len(S)+len(T2))
+
+#4.10 EJERCICO 10
+qq={1,1,1,1,1,1,1,1,1,1,1,}
+print(len(qq))
+
+print("5 ITERACION")
+#5.1 EJERCICIO 1
+S=set("GOL")
+for i in S:
+    print(i)
+
+#5.2 EJERCICIO 2
+S={1,1,1,1,1,1,1}
+for i in S:
+    print(i)
+
+#5.3 EJERCICIO 3
+Sq=set("GAMARRA")
+for i in Sq:
+    print(i)
+
+#5.4 EJERCICIO 4
+SET=set("HABIA UNA VEZ")
+for i in SET:
+    print(i)
+
+#5.5 EJERCICIO 5
+SW={1,2,3,4,4,4,4,4,3}
+for i in SW:
+    print(i)
+#5.6 EJERCICIO 6
+FR={"GOL","DE","PERU","MINUTO 20"}
+for i in FR:
+    print(i)
+
+#5.7 EJERCICIO 7
+SETQ=set()
+for i in SETQ:
+    print(i)
+
+#5.8 EJERCICIO 8
+S={"A","E","A","E","A","A"}
+for i in S:
+    print(i)
+#5.9 EJERCICIO 9
+SET=set("HOOLA")
+S={1,2,2}
+for i in SET:
+    print(i)
+for m in S:
+    print(m)
+
+#5.10 EJERCICO 10
+SETW=set("LALALALALALLALALLALALALALA")
+for i in SETW:
+    print(i)
+
+print(" 6  MAXIMOS Y MINIMOS ")
+#6.1 EJERCICIO 1
+SE=set("1112222233333")
+print(max(SE))
+
+#6.2 EJERCICIO 2
+SE=set("1112222233333")
+print(min(SE))
+
+#6.3 EJERCICIO 3
+SE=set("11111199919191991")
+print(max(SE))
+
+#6.4 EJERCICIO 4
+SET={1,1,1,2,2,2,3}
+print(min(SET))
+
+#6.5 EJERCICIO 5
+SE=set("HOOLA")
+print(max(SE))
+
+#6.6 EJERCICIO 6
+SE=set("AVE")
+print(max(SE))
+#6.7 EJERCICIO 7
+M={1,2,2,2,2}
+N={12,2,3,3,3,}
+A=min(N)+max(N)
+print(A)
+
+#6.8 EJERCICIO 8
+V={1,2,3,4,43,44}
+Z={1,3,4,5,5}
+J=max(Z)-min(V)
+print(J)
+
+#6.9 EJERCICIO 9
+SE=set("UNPRG1")
+print(max(SE))
+
+#6.10 EJERCICO 10
+SE=set("123")
+print(min(SE))
+print(max(SE))
+
+print("7 ELIMINACION")
+#7.1 EJERCICIO 1
+SE=set("AAAT")
+SE.discard("A")
+print(SE)
+
+#7.2 EJERCICIO 2
+SET=set("!!!!!!!!!")
+SET.discard("!")
+print(SET)
+
+#7.3 EJERCICIO 3
+A={1,2,3,1,1,1}
+A.discard(1)
+print(A)
+
+#7.4 EJERCICIO 4
+A={1,2,3,1,1,1}
+A.discard(54)
+print(A)
+
+#7.5 EJERCICIO 5
+A1={1,2,3,1,1,1}
+A1.discard(11)
+print(A1)
+
+#7.6 EJERCICIO 6
+SA=set()
+SA.discard("J")
+print(SA)
+
+#7.7 EJERCICIO 7
+A={"HOLA","JUANA"}
+A.discard(1)
+print(A)
+
+#7.8 EJERCICIO 8
+SA=set("SOY PERUANO")
+SA.discard("PERUANO")
+print(SA)
+
+#7.9 EJERCICIO 9
+SD={2,3,4,"HOLA"}
+SD.discard("HOLA")
+print(SD)
+#7.10 EJERCICO 10
+M={1,2,3,1,1,1}
+M.discard(6)
+print(A)
+
+print("8 AGREGADO")
+#8.1 EJERCICIO 1
+A=set()
+A.add("HOLA")
+print(A)
+
+#8.2 EJERCICIO 2
+A1=set()
+A1.add("123")
+print(A1)
+
+#8.3 EJERCICIO 3
+A2=set()
+A2.add("123")
+print(A2)
+
+#8.4 EJERCICIO 4
+a1=set("UNPRG")
+a1.add(1)
+print(a1)
+
+#8.5 EJERCICIO 5
+a={2,3}
+a.add(1)
+print(a)
+
+#8.6 EJERCICIO 6
+S={"HOOLA","GOL"}
+S.add("H")
+print(S)
+
+#8.7 EJERCICIO 7
+a={1,1,1,11}
+a.add(1)
+print(a)
+
+#8.8 EJERCICIO 8
+S=set("HOOOLA")
+S.add("SANDIA")
+print(S)
+
+#8.9 EJERCICIO 9
+a=set()
+a.add("HOOOOOOOOOLA")
+print(a)
+
+#8.10 EJERCICO 10
+SA=set("PERUANO")
+SA.add("NACIONAL")
+print(SA)
+
+print("9 ANULACION ")
+#9.1 EJERCICIO 1
+A=set("HOLA")
+A.clear()
+print(A)
+
+#9.2 EJERCICIO 2
+B=set("GAGAGGAGGA")
+B.clear()
+print(B)
+
+#9.3 EJERCICIO 3
+SA={1,2,3,4,5,6}
+SA.clear()
+print(SA)
+
+#9.4 EJERCICIO 4
+SD={"HOLA","COMO ","ESTAS"}
+SD.clear()
+print(SD)
+
+#9.5 EJERCICIO 5
+X={"A","E","W","J","T"}
+X.clear()
+print(X)
+
+#9.6 EJERCICIO 6
+SA={1,1,1,1,1,1}
+SA.clear()
+print(SA)
+
+#9.7 EJERCICIO 7
+C=set()
+C.clear()
+print(C)
+
+#9.8 EJERCICIO 8
+SA={"HOOOLA"}
+SA.clear()
+print(SA)
+
+#9.9 EJERCICIO 9
+CV=set("HOOOOLALALALALAL")
+CV.clear()
+print(CV)
+
+#9.10 EJERCICO 10
+SA={}
+SA.clear()
+print(SA)
+
+print("10 CLONADO")
+#10.1 EJERCICIO 1
+A=set()
+V=A.copy()
+print(V)
+
+#10.2 EJERCICIO 2
+D=set("HOLA")
+S=D.copy()
+print(S)
+
+#10.3 EJERCICIO 3
+A1=set("!#$%&/(")
+V1=A1.copy()
+print(V1)
+
+#10.4 EJERCICIO 4
+A={1,2,3,4,5,0}
+B=A.copy()
+print(B)
+
+#10.5 EJERCICIO 5
+S=set("")
+X=S.copy()
+print(X)
+
+#10.6 EJERCICIO 6
+CO={}
+XZ=CO.copy()
+print(XZ)
+
+#10.7 EJERCICIO 7
+DF={"DANTE","PANCHO","JULIO","JULIO"}
+S=DF.copy()
+print(S)
+
+#10.8 EJERCICIO 8
+A={"HOLALALALA"}
+B=A.copy()
+print(B)
+
+#10.9 EJERCICIO 9
+SA=set("!")
+XC=SA.copy()
+print(XC)
+
+#10.10 EJERCICO 10
+S=set("ALABANZA")
+X=S.copy()
+print(X)
+
+print("11 EXTRACCION ")
+#11.1 EJERCICIO 1
+SG=set("!#$%&")
+X=SG.pop()
+print(X)
+print(SG)
+
+#11.2 EJERCICIO 2
+S=set("HOLA")
+Y=S.pop()
+print(Y)
+print(S)
+
+#11.3 EJERCICIO 3
+Q={1,2,3,4,5,6}
+A=Q.pop()
+print(A)
+print(Q)
+
+#11.4 EJERCICIO 4
+AS={12,23,34,45,56,6}
+A=AS.pop()
+print(A)
+print(AS)
+
+#11.5 EJERCICIO 5
+SG1=set("12222111111")
+X1=SG1.pop()
+print(X1)
+print(SG1)
+
+#11.6 EJERCICIO 6
+Q={"HOLA","JUAN","ESTAS","ESTUDIANDO"}
+A=Q.pop()
+print(A)
+print(Q)
+
+#11.7 EJERCICIO 7
+SG2=set("gooool")
+X2=SG2.pop()
+print(X2)
+print(SG2)
+
+#11.8 EJERCICIO 8
+Q1={"HOLA"}
+A1=Q.pop()
+print(A1)
+print(Q1)
+
+#11.9 EJERCICIO 9
+SG=set("manzana")
+X=SG.pop()
+print(X)
+print(SG)
+
+#11.10 EJERCICO 10
+Q={"============="}
+A=Q.pop()
+print(A)
+print(Q)
+
+print("12 SEPARACION")
+#12.1 EJERCICIO 1
+A=set("HOLA")
+A.remove("H")
+print(A)
+
+#12.2 EJERCICIO 2
+A1=set("1234567")
+A1.remove("1")
+print(A1)
+
+#12.3 EJERCICIO 3
+F={1,2,3,4,5}
+F.remove(1)
+print(F)
+
+#12.4 EJERCICIO 4
+S=set("MANZANILLA")
+S.remove("A")
+print(S)
+
+#12.5 EJERCICIO 5
+F={1,2,3,4,5}
+F.remove(5)
+print(F)
+
+#12.6 EJERCICIO 6
+F1={"DIOS","ES","AMOR","VIDA"}
+F1.remove("VIDA")
+print(F1)
+
+#12.7 EJERCICIO 7
+A=set("LALALALALALAL!!")
+A.remove("!")
+print(A)
+
+#12.8 EJERCICIO 8
+F={"HOLA"}
+F.remove("HOLA")
+print(F)
+
+#12.9 EJERCICIO 9
+P=set("holalalala")
+P.remove("h")
+print(P)
+
+#12.10 EJERCICO 10
+F={1,2,3,4,5}
+F.remove(2)
+print(F)
+
+print("13 ORDENADO")
+#13.1 EJERCICIO 1
+Z=set("HOLALALALA")
+set(sorted(Z))
+print(Z)
+
+#13.2 EJERCICIO 2
+Z1=set("123432")
+set(sorted(Z1))
+print(Z1)
+
+#13.3 EJERCICIO 3
+W={1,2,32,3,43}
+set(sorted(W))
+print(W)
+
+#13.4 EJERCICIO 4
+Z=set("1234567890")
+set(sorted(Z))
+print(Z)
+
+#13.5 EJERCICIO 5
+W1={1,1,1,12,2,2,2,3,43,4}
+set(sorted(W1))
+print(W1)
+
+#13.6 EJERCICIO 6
+ZA=set("MANZANA")
+set(sorted(ZA))
+print(ZA)
+
+#13.7 EJERCICIO 7
+T={1,2,33,3,3,3,33}
+set(sorted(T))
+print(T)
+
+#13.8 EJERCICIO 8
+Z1=set("98765432")
+set(sorted(Z1))
+print(Z1)
+
+#13.9 EJERCICIO 9
+W={"HOLA","ALEX"}
+set(sorted(W))
+print(W)
+
+#13.10 EJERCICO 10
+Z=set("7654345678")
+set(sorted(Z))
+print(Z)
+
+print("14 UNION")
+#14.1 EJERCICIO 1
+T1=set()
+T2=set("FGHJK")
+x=T1.union(T2)
+print(x)
+
+#14.2 EJERCICIO 2
+T11=set("GOL")
+T23=set("GOL")
+x=T11.union(T23)
+print(x)
+
+#14.3 EJERCICIO 3
+T=set()
+S=set()
+Y=S.union(T)
+print(Y)
+
+#14.4 EJERCICIO 4
+D={1,2,3,4}
+S={1,1,1,2,2,3,4}
+D=S.union(D)
+print(D)
+
+#14.5 EJERCICIO 5
+A=set("GOOOOOL")
+S={"G","O","L"}
+x1=S.union(A)
+print(x1)
+
+#14.6 EJERCICIO 6
+X={1,1,1,1,1,12,2,2}
+Y={1,1,1,12,2}
+W=Y.union(X)
+print(W)
+
+#14.7 EJERCICIO 7
+T=set("ALA")
+S=set("LALALALLALALALA")
+E=S.union(T)
+print(E)
+
+#14.8 EJERCICIO 8
+T1=set("111222221212221221")
+S1=set("12")
+x=T1.union(S1)
+print(x)
+
+#14.9 EJERCICIO 9
+T=set("ANANANANANANNANNANANANANAN")
+S=set("BANANA")
+xA=T.union(S)
+print(xA)
+
+#14.10 EJERCICO 10
+T2={}
+S2=set()
+xS=T.union(S)
+print(xS)
+
+print("14 DIFERENCIA")
+#15.1 EJERCICIO 1
+AS=set()
+AZ=set()
+X=AS-AZ
+print(X)
+
+#15.2 EJERCICIO 2
+C={1,2}
+D={1,6,7}
+V=C-D
+print(V)
+
+#15.3 EJERCICIO 3
+A=set("HOLA")
+Z=set("DIA")
+Y=Z-A
+print(Y)
+
+#15.4 EJERCICIO 4
+C1={0,2}
+D1={1,2,3,4,5,6}
+V1=C1-D1
+print(V1)
+
+#15.5 EJERCICIO 5
+T=set()
+X=set("!1234567")
+G=X-T
+print(G)
+
+#15.6 EJERCICIO 6
+C={1,1,1,1,1,2,3,4,5}
+D={1,1,2,3,1}
+V=C-D
+print(V)
+
+#15.7 EJERCICIO 7
+AS=set("123456789098765432")
+AZ=set("qwerty65432wertgh")
+X=AS-AZ
+print(X)
+
+#15.8 EJERCICIO 8
+A={"HOLA","ESTAS"}
+D={"HOLA","COMO","ESTAS"}
+K=D-A
+print(K)
+
+#15.9 EJERCICIO 9
+SA=set()
+WS=set("yujkmnbgty")
+X=SA-WS
+print(X)
+
+#15.10 EJERCICO 10
+C={0}
+D={1,2,3}
+V=C-D
+print(V)
+
+
+print("16 INTERSECCION")
+#16.1 EJERCICIO 1
+AS=set()
+AZ=set()
+X=AS & AZ
+print(X)
+
+#16.2 EJERCICIO 2
+C={1,2}
+D={1,6,7}
+V=C&D
+print(V)
+
+#16.3 EJERCICIO 3
+A=set("HOLA")
+Z=set("DIA")
+Y=Z&A
+print(Y)
+
+#16.4 EJERCICIO 4
+C1={0,2}
+D1={1,2,3,4,5,6}
+V1=C1&D1
+print(V1)
+
+#16.5 EJERCICIO 5
+T=set()
+X=set("!1234567")
+G=X&T
+print(G)
+
+#16.6 EJERCICIO 6
+C={1,1,1,1,1,2,3,4,5}
+D={1,1,2,3,1}
+V=C&D
+print(V)
+
+#16.7 EJERCICIO 7
+AS=set("123456789098765432")
+AZ=set("qwerty65432wertgh")
+X=AS&AZ
+print(X)
+
+#16.8 EJERCICIO 8
+A={"HOLA","ESTAS"}
+D={"HOLA","COMO","ESTAS"}
+K=D&A
+print(K)
+
+#16.9 EJERCICIO 9
+SA=set()
+WS=set("yujkmnbgty")
+X=SA&WS
+print(X)
+
+#16.10 EJERCICO 10
+C={0}
+D={1,2,3}
+V=C&D
+print(V)
+
+# EJERCICIOS CON SETS FINALIZADOS
