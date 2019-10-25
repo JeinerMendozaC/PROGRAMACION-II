@@ -1,0 +1,688 @@
+print("OPERCIONES CON TUPLAS")
+print("1 CREACION")
+#1.1 EJERCICIO 1
+t=()
+print("TUPLA VACIA",t)
+
+#1.2 EJERCICIO 2
+T=(1,2,3)
+print(T)
+
+#1.3 EJERCICIO 3
+T1=(15,)
+print(T1)
+
+#1.4 EJERCICIO 4
+TU=(1,"A","B",2)
+print(TU)
+
+#1.5 EJERCICIO 5
+R=1,2,3,4,"E"
+print(R)
+
+#1.6 EJERCICIO 6
+FRUTAS=("MANZANA","NARANJA","PERA","UVA")
+print("TUPLA DE FRUTAS",FRUTAS)
+
+#1.7 EJERCICIO 7
+NUMS=(1,2,3,4,5,6)
+print("TUPLA DE NUMEROS",NUMS)
+
+#1.8 EJERCICIO 8
+S="A","E","I","O","U"
+print("TUPLA DE VOCALES",S)
+
+#1.9 EJERCICIO 9
+T=()
+T1=(1,2,3)
+print(T)
+print(T1)
+
+#1.10 EJERCICIO 10
+TUPLA=tuple(input("ingrese una palabra:"))
+print(TUPLA)
+
+print("2 PERTENENCIA")
+#2.1 EJERCICIO 1
+T=()
+if "X" not in T:
+    print("TRUE")
+
+#2.2 EJERCICIO 2
+T=(1,2,3,4,5,6)
+if 1 in T:
+    print("TRUE")
+
+#2.3 EJERCICIO 3
+T=1,2,3,4,5
+if 6 not in  T:
+    print("TRUE")
+
+#2.4 EJERCICIO 4
+S="A","E","I","O","U"
+if "E" in S:
+    print("FALSE")
+
+#2.5 EJERCICIO 5
+T=tuple("holamundo")
+if "a" in T:
+    print("TRUE")
+
+#2.6 EJERCICIO 6
+A=(123,1345,1345)
+if 1230 not  in A:
+    print("TRUE")
+
+#2.7 EJERCICIO 7
+QW="A",2,"B",3,"C"
+if "K" not in QW:
+    print("TRUE")
+
+#2.8 EJERCICIO 8
+N=int(input("ingrese un numero:"))
+L=(1,2,3,4,5,6,7,8,9)
+if N in L:
+    print("SU NUMERO ESTA EN LA LISTA")
+else:
+    print("SU NUMERO NO ESTA EN LA LISTA")
+
+#2.9 EJERCICIO 9
+D=input("Ingrese una letra")
+G=tuple("ABCDEFGHIJ")
+if D not in G:
+    print("NO ESTA EN LA LISTA")
+else:
+    print("SI ESTA EN LA LISTA")
+
+#2.10 EJERCICIO 10
+SA=1,2,3,4,5,"W"
+if "N" not in SA:
+    print("TRUE")
+
+print("3 CONCATENACION")
+#3.1 EJERCICIO 1
+S=(1,2,3)
+A=(3,)
+Z=S+A
+print(Z)
+
+#3.2 EJERCICIO 2
+S=1,2,3,4,5
+D=(2,)
+X=(7,8,9)
+ZA=S+D+X
+print(ZA)
+
+#3.3 EJERCICIO 3
+A=tuple("HOLA")
+S=("ALEX",)
+U=A+S
+print(U)
+
+#3.4 EJERCICIO 4
+Y="A","B"
+R="C","D"
+SA=Y+R
+print(SA)
+
+#3.5 EJERCICIO 5
+RT="A","C","S"
+W=(1,)
+print(RT+W)
+
+#3.6 EJERCICIO 6
+S=tuple("HOOLA")
+D=tuple("MUNDO")
+G=tuple("GIGANTE")
+print(S+D+G)
+
+#3.7 EJERCICIO 7
+S=()
+W=(1,)
+print(S+W)
+
+#3.8 EJERCICIO 8
+A=tuple("BUS")
+V=tuple("GRANDE")
+T="V","E","R","D","E"
+SA=V+T
+print(SA)
+
+#3.9 EJERCICIO 9
+I=tuple(input("ingrese su nombre:"))
+R=tuple(input("INGRRSE SU APELLIDO"))
+F=I+R
+print(F)
+
+#3.10 EJERCICIO 10
+D2="","","2"
+D3="",3
+print(D3+D2)
+
+print("4 COMPARACION")
+#4.1 EJERCICIO 1
+T=()
+Y=()
+if T==Y:
+    print("TRUE")
+
+#4.2 EJERCICIO 2
+T=(1,2,3,4,5)
+Y=(1,2,34)
+if not T==Y:
+    print("TRUE")
+
+#4.3 EJERCICIO 3
+T=(1,2,3,4,5)
+Y=(1,2,3,5,4)
+if not T==Y:
+    print("TRUE")
+
+#4.4 EJERCICIO 4
+I=("A","E","I")
+O=("A","I","E")
+if not I==O:
+    print("TRUE")
+
+#4.5 EJERCICIO 5
+W=(1,2,3)
+Q=(5,6,7)
+if W<Q:
+    print("TRUE")
+
+#4.6 EJERCICIO 6
+I=("A","E","I")
+O=("A","I","E")
+if  I<O:
+    print("TRUE")
+
+#4.7 EJERCICIO 7
+S=tuple("ABCDEFG")
+A=tuple("HIJKL")
+if S<A:
+    print("TRUE")
+
+#4.8 EJERCICIO 8
+S=1,2,3,4
+D=1,2,3,4
+if D==S:
+    print("TRUE")
+
+#4.9 EJERCICIO 9
+t=()
+R=(1,)
+if t<R:
+    print("TRUE")
+
+#4.10 EJERCICIO 10
+I=tuple(input("INGRESE UNA PLABRA:"))
+D=tuple(input("INGRESE OTRA PALABRA:"))
+if I<D:
+    print(D,"ES MAYOR QUE",I)
+elif I>D:
+    print(I,"ES MAYOR QUE",D)
+else:
+    print("SON IGUALES")
+
+print("5 INDEXACION")
+#5.1 EJERCICIO 1
+t=(1,2,3,4,5)
+X=t[2]
+print(X)
+
+#5.2 EJERCICIO 2
+T=9,0,4,5,6,7
+print(T[3])
+
+#5.3 EJERCICIO 3
+J=("A","B","V","G","J")
+print(J[0])
+
+#5.4 EJERCICIO 4
+B=tuple("UNPRG")
+print(B[2])
+
+#5.5 EJERCICIO 5
+U=(2,)
+print(U[0])
+
+#5.6 EJERCICIO 6
+O=tuple("ENEROFEBREOMARZOABRIL")
+print(O[5])
+#5.7 EJERCICIO 7
+S="Q","T",2,4
+print(S[1])
+
+#5.8 EJERCICIO 8
+I=int(input("INGRE UNA POCICION:"))
+L=(1,2,3,4,5)
+print(L[I])
+
+#5.9 EJERCICIO 9
+Y=tuple(input("INGRESE UNA TUPLA:"))
+A=int(input("INGRESE UNA POCICON:"))
+print(Y[A])
+
+#5.10 EJERCICIO 10
+TU=1,3,4,5,6
+I=TU[0]
+print(I)
+
+print("6 CORTADO")
+#6.1 EJERCICIO 1
+L=(1,2,3,4,5,6)
+print(L[:3])
+
+#6.2 EJERCICIO 2
+S=1,3,4,5,6
+print(S[1:4])
+
+#6.3 EJERCICIO 3
+D=tuple("1234567")
+print(D[3:5])
+
+#6.4 EJERCICIO 4}
+O="A","E","I","O","U"
+print(O[2:4])
+
+#6.5 EJERCICIO 5
+A=1,2,3,4,5,6,67,7,7,8,9
+A1=A[:6:-1]
+print(A1)
+
+#6.6 EJERCICIO 6
+B="W","E","R","R","L","S"
+print(B[1:5])
+
+#6.7 EJERCICIO 7
+T=(1,1,1,1,1,1,1,1,1)
+print(T[2:6])
+
+#6.8 EJERCICIO 8
+T=("A","N","G","E","L")
+print(T[:-1])
+
+#6.9 EJERCICIO 9
+T=("A","N","G","E","L")
+print(T[:2:-1])
+#6.10 EJERCICIO 10
+T=tuple("UNIVERSIDAD NACIONAL PEDRO RUIZ GALLLO")
+print(T[12:20])
+
+print("7 LONGITUD")
+#7.1 EJERCICIO 1
+T=()
+print(len(T))
+
+#7.2 EJERCICIO 2
+T=(1,)
+print(len(T))
+
+#7.3 EJERCICIO 3
+T=(1,2,3,4,5,6,7)
+print(len(T))
+
+#7.4 EJERCICIO 4
+tup=tuple("UNIVERSIDAD NACIONAL PEDRO RUIZ GALLO")
+A=len(tup)
+print(A)
+
+#7.5 EJERCICIO 5
+T=1,2,3,45,5,6,7
+print(len(T))
+
+#7.6 EJERCICIO 6
+Y=("A","B","C","D","E","E","F","T")
+Y1=len(Y[1:5])
+print(Y1)
+
+#7.7 EJERCICIO 7
+X=1,2,3,4,5,6
+Y=tuple("UNPRG")
+K=len(Y+X)
+print(K)
+
+#7.8 EJERCICIO 8
+Y=tuple(input("INGRESE UNA TUPLA:"))
+G=len(Y)
+print(G)
+
+#7.9 EJERCICIO 9
+T=1,2,3,4,5,6,7,8,9,10,12
+C=len(T[::-1])
+print(C)
+
+#7.10 EJERCICIO 10
+L=tuple(input("INGRESE UNA TUPLA:"))
+L2=tuple(input("INGRESE OTRA TUPLA:"))
+E=len(L+L2)
+print(E)
+
+print("8 ITERACION")
+#8.1 EJERCICIO 1
+T=1,2,3,4,5,6
+for i in T:
+    print(i)
+
+#8.2 EJERCICIO 2
+T="SA","SE","SI","SO","SU"
+for i in T:
+    print(i)
+
+#8.3 EJERCICIO 3
+S=tuple("UNIVERSITARIO")
+for i in S:
+    print(i)
+
+#8.4 EJERCICIO 4
+A=(0,0,0,0,0,0)
+for i in A:
+    print(i)
+
+#8.5 EJERCICIO 5
+S=(12,13,14,16,18,19)
+A=0
+for i in S:
+    A=A+i
+print("LA SUMA DE ELEMNTOS ES",A)
+
+#8.6 EJERCICIO 6
+S=(12,13,14,16,18,19)
+A=0
+for i in S:
+    A=A+i
+    N=A/len(S)
+print("PROMEDIO",N)
+
+#8.7 EJERCICIO 7
+
+#8.8 EJERCICIO 8
+S=(12,13,14,16,18,19)
+A=0
+for i in S:
+    A=A+1
+print("HAY",A,"ELEMENTOS")
+
+#8.9 EJERCICIO 9
+X=("ALEX","OMAR","EDUARDO","JHAIR")
+for i in X:
+    print(i)
+
+#8.10 EJERCICIO 10
+TA=1,2,3,4,5,6,7
+for TE in TA:
+    print(TE)
+
+print("9 BUSQUEDA")
+#9.1 EJERCICIO 1
+t=1,1,2,3,1,2,3
+Y=t.index(1)
+print(Y)
+
+#9.2 EJERCICIO 2
+t=1,1,2,3,1,2,3
+Y=t.index(2)
+print(Y)
+
+#9.3 EJERCICIO 3
+R=1,1,2,3,1,2,3
+Y=R.index(1)
+G=R.index(3)
+print(Y+G)
+
+#9.4 EJERCICIO 4
+s=list("HOOLA MUNDO")
+Y=s.index("O")
+print(Y)
+
+#9.5 EJERCICIO 5
+W=("A","B","C","D","E","F","G","H")
+AS=W.index("B")
+print(AS)
+
+#9.6 EJERCICIO 6
+R=1,1,2,3,1,2,3
+Y=R.index(1)
+G=R.index(3)
+print(Y*G)
+
+#9.7 EJERCICIO 7
+T=tuple("GOOL")
+F=T.index("O")
+print(F)
+
+#9.8 EJERCICIO 8
+IN = tuple(input("INGRESE UNA LISTA:"))
+
+if "A" in IN:
+    Y = IN.index("A")
+    print("LA LETRA A EN TU TEXTO ESTA EN LA POSICIO:", Y)
+else:
+    print("EN TU TEXTO NO HAY LA LETRA A MAYUSCULA ")
+
+#9.9 EJERCICIO 9
+S="A","B","F","G"
+print(S.index("F"))
+
+#9.10 EJERCICIO 10
+S=tuple(input("INGRESE UNA TUPLA:"))
+I=input("INGRESE UNA LETRA DE SU TEXTO PARA VER SU UBICACION:")
+if I in S:
+    Y=S.index(I)
+    print(Y)
+else:
+    print("ESTA LETRA NO ESTA EN SU TUPLA")
+
+print("10 CONTEO")
+#10.1 EJERCICIO 1
+T=1,2,3,4,5,2,2,2
+Y=T.count(2)
+print(Y)
+
+#10.2 EJERCICIO 2
+S=(1,2,3,1,3,1,11,1)
+M=S.count(1)
+print(M)
+
+#10.3 EJERCICIO 3
+sec=("SEN","COS","TAN","COT","SEC","SEC","SEC")
+print(sec.count("SEC"))
+
+#10.4 EJERCICIO 4
+T=tuple("ANALISISMATEMATICO")
+print(T.count("A"))
+
+#10.5 EJERCICIO 5
+T1=(1,1,2,3,4,41,1,1)
+T2=(1,1,1,1,)
+TR=T1+T2
+print(TR.count(1))
+
+#10.6 EJERCICIO 6
+S=tuple("ALAFABETO")
+D=S.count("X")
+print(D)
+
+#10.7 EJERCICIO 7
+T1=(1,1,2,3,4,41,1,1)
+T2=(1,1,1,1,)
+TR=T1+T2
+Te=T1+T1
+J=TR.count(1)
+G=Te.count(2)
+print(J+G)
+
+#10.8 EJERCICIO 8
+T=tuple("HAHAHAHAHANAOA")
+I=input("INGRESE LA LETRA PARA CONTAR:")
+if I in T:
+    print(T.count(I))
+else:
+    print("ESTA LETRA NO SE ENCUENTRA EN LA TUPLA")
+#10.9 EJERCICIO 9
+S=1,2,3,4
+F=S*3
+print(F.count(1))
+
+#10.10 EJERCICIO 10
+S=tuple(input("ingrese una frase:"))
+A=input("ingrese la letrab de su texto para contarla:")
+if A in S:
+    SA=S.count(A)
+    print(SA)
+else:
+    print("ESTA LETRA NO ESTA EN SU TUPLA")
+
+print("11 MAXIMOS Y MINIMOS")
+#11.1 EJERCICIO 1
+T=1,2,3,4,5
+print(min(T))
+
+#11.2 EJERCICIO 2
+T=1,2,3,4,5
+print(max(T))
+
+#11.3 EJERCICIO 3
+T=1,2,3,4,5
+Y=max(T)-min(T)
+print(Y)
+
+#11.4 EJERCICIO 4
+T="A","E","I","O","U"
+print(min(T))
+print(max(T))
+
+#11.5 EJERCICIO 5
+P=tuple("HOLA AMIGOS MIOS")
+print(max(P))
+
+#11.6 EJERCICIO 6
+NOTA=(12,13,14,18)
+print(min(NOTA))
+print(max(NOTA))
+
+#11.7 EJERCICIO 7
+Q=1,2,3,4
+W=(1,3,4,5,6,7,89)
+Y=min(W)+max(Q)
+print(Y)
+
+#11.8 EJERCICIO 8
+A=("A","b","V","H","g")
+Y=max(A)
+print(Y)
+
+#11.9 EJERCICIO 9
+I=tuple(input("INGRESE UNA TUPLA:"))
+print(max(I))
+print(min(I))
+
+#11.10 EJERCICIO 10
+T=tuple("HOLAMUNDO")
+print(max(T))
+print(min(T))
+
+print("12 MULTIPLICACION")
+#12.1 EJERCICIO 1
+T=()
+U=T*2
+print(U)
+
+#12.2 EJERCICIO 2
+T=(1,2,3,4)
+U=T*2
+print(U)
+
+#12.3 EJERCICIO 3
+T=(1,2,3,4,5,6)
+U=T*0
+print(U)
+
+#12.4 EJERCICIO 4
+S=tuple("UNPRG")
+R=S*10
+print(R)
+
+#12.5 EJERCICIO 5
+A=1,"A",3,"C",3
+A*=6
+print(A)
+
+#12.6 EJERCICIO 6
+A1=int(input("CUANTAS VECES DESEA REPETIR LA TUPLA:"))
+A=(1,2,3,4,5)
+print(A*A1)
+
+#12.7 EJERCICIO 7
+T=tuple("FIN DE SEMANA")
+T*=2
+print(T)
+
+#12.8 EJERCICIO 8
+R=(5,)
+R*=3
+print(R)
+
+#12.9 EJERCICIO 9
+A="A","B","C","D"
+print(4*A)
+
+#12.10 EJERCICIO 10
+S=tuple(input("INGRESE UNA TUPLA:"))
+A=int(input("INGRESE LA CATIDAD PARA MULTIPLAR SU TUPLA:"))
+print(S*A)
+
+print("13 CLONADO")
+#13.1 EJERCICIO 1
+t=()
+S=t[:]
+print(S)
+
+#13.2 EJERCICIO 2
+T=1,2,3,4,5
+S=T[:]
+print(S)
+
+#13.3 EJERCICIO 3
+A=tuple("HOLA MUNDO")
+O=A[:]
+print(O)
+
+#13.4 EJERCICIO 4
+T=1,2,3,4,5
+print(T[:])
+
+#13.5 EJERCICIO 5
+TUP=tuple(input("INGRESE UNA TUPLA:"))
+TAP=tuple(input("INGRESE OTRA TUPLA"))
+if TUP[:]==TAP[:]:
+    print("LAS TUPLAS SON IGUALES")
+else:
+    print("LAS TUPLAS SON DIFERENTRES")
+
+#13.6 EJERCICIO 6
+S=(2,)
+S1=S[:]
+print(S1)
+
+#13.7 EJERCICIO 7
+TUPLAAA="MAN","ZA","NA"
+print(TUPLAAA*2)
+
+#13.8 EJERCICIO 8
+A=(1,2,3,4)
+S=(1,"A")
+print(A[:])
+print(S[:])
+
+#13.9 EJERCICIO 9
+A1=tuple("ASIENDA")
+S=A1[:]
+print(S)
+
+#13.10 EJERCICIO 10
+A=tuple(input("INGRESE UNA TUPLA:"))
+V=A[:]
+print(V)
+
+#FIN DE EJERCICOS CON TUPLAS
