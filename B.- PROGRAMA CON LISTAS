@@ -1,0 +1,61 @@
+print("## REGISTRO DE NOTAS ##")
+LISTA_NOTAS=[]
+LISTA_NOTAS1=[]
+NUMERO_NOTAS=int(input("-CUANTAS NOTAS DESEA INGRESAR:"))
+if NUMERO_NOTAS>0:
+    B=0
+    for i in range(1,NUMERO_NOTAS+1):
+        NOTA=float(input("-INGRESE UNA NOTA:"))
+        LISTA_NOTAS.append(NOTA)
+        A=len(LISTA_NOTAS)
+        B=B+NOTA
+        PROM=B/A
+        X=max(LISTA_NOTAS)
+        Y=min(LISTA_NOTAS)
+    print("##########################################################")
+    print("SUS",A,"NOTAS REGISTRADAS SON:",LISTA_NOTAS)
+    print("SU MAYOR NOTA OBTENIDA ES:",X)
+    print("SU MENOR NOTA OBTENINA ES:",Y)
+    print("EL PROMEDIO DE SUS NOTAS REGISTRADAS ES:",PROM)
+    print("##########################################################")
+    COMPARACION=input("DESEA INGRESAR OTRO REGISTRO DE NOTAS(SI/NO) PARA COMPARARLAS CON LAS ANTERIORES:")
+    COMPARACION=COMPARACION.upper()
+    if COMPARACION=="SI":
+        NUMERO_NOTAS1 = int(input("-CUANTAS NOTAS DESEA INGRESAR:"))
+        if NUMERO_NOTAS1 > 0:
+            for i in range(1, NUMERO_NOTAS1+ 1):
+                NOTA1= float(input("-INGRESE UNA NOTA:"))
+                LISTA_NOTAS1.append(NOTA1)
+            S=LISTA_NOTAS+LISTA_NOTAS1
+            S.sort()
+            print("##########################################################")
+            print("SUS", len(LISTA_NOTAS1), "NOTAS REGISTRADAS SON:", LISTA_NOTAS1)
+            print("ESTA ES LA LISTA DE TODAS SUS NOTAS REGISTRADAS",S)
+            print("########################################")
+            if LISTA_NOTAS1>LISTA_NOTAS:
+                print("##########################################################")
+                print("EN ESTA LISTA ESTA SU MEJOR NOTA:",LISTA_NOTAS1)
+                print("######EL PROGRAMA A FINALIZADO#######")
+                print("##########################################################")
+            elif LISTA_NOTAS<LISTA_NOTAS1:
+                print("##########################################################")
+                print(" EN ESTA ES LA LISTA ESTA SU MEJOR NOTA:",LISTA_NOTAS)
+                print("#######EL PROGRAMA A FINALIZADO######")
+                print("##########################################################")
+            else:
+                print("##########################################################")
+                print("LAS LISTAS SON IGUALES")
+                print("#######EL PROGRAMA A FINALIZADO########")
+                print("###################################################")
+        else:
+            print("##########################################################")
+            print("-ERROR SOLO DE ADMITE CANTIDADES MAYORES QUE CERO(0)")
+            print("##########################################################")
+    else:
+        print("##############################################################")
+        print("######EL PROGRAMA A FINALIZADO#####")
+        print("##############################################################")
+else:
+    print("##########################################################")
+    print("-ERROR SOLO DE ADMITE CANTIDADES MAYORES QUE CERO(0)")
+    print("##########################################################")
