@@ -1,0 +1,1374 @@
+print("OPERACIONES CON LISTAS")
+print("1 CREACION DE LISTAS")
+#1.1.-PRIMER EJERCICIO:
+L=[] #lista vacia
+print("lista vacia",L)
+
+#1.2.-SEGUNDO EJERCICIO:
+VOCALES=["A","E","I","O","U"]   #LISTA DE VOCALES
+print("lista de vocales",VOCALES)
+
+#1.3.- TERCER EJERCICIO
+FRUTAS=["SANDIA","PLATANO","MANZANA","NARANJA","MANDARINA"]
+print("lista de frutas",FRUTAS)
+
+#1.4.- CUARTO EJERCICIO
+NUM_IMPARES=[1,3,5,7,9,11,13]
+print("lista de numeros primos",NUM_IMPARES)
+
+#1.5.- QUINTO EJERCICIO
+NOMBRE_DELETREADO=list("JEINER")
+print("lista de mi nombre deletreado",NOMBRE_DELETREADO)
+
+#1.6.- SEXTO EJERCICIO
+NOTAS=[12,13,14,17]
+print("lista de",NOTAS)
+
+#1.7.- SETIMO EJERCICIO
+T=[]
+R=[]
+print("lista vacia",T)
+print("lista vacia",R)
+
+
+#1.8.- OCTAVO EJERCICIO}
+NOTAS_PRIM_UNID=[12,13,14,15]
+NOTAS_SEG_UNID=[16,19,18,18]
+print("lista de notas de la primera unidad",NOTAS_PRIM_UNID)
+print("lista de notaas de la segunda unidad",NOTAS_SEG_UNID)
+
+#1.9.- NOVENO EJERCICIO}
+TIP_MUSICA=["ELECTRONICA","VALS","ROCK","TECNO"]
+print("lista de tipos de musica",TIP_MUSICA)
+
+#1.10. DECIMO EJERCICIO
+LETRAS_DE_PALA=list("AMOR")
+print("lista con letras de la palabra amor:",LETRAS_DE_PALA)
+
+print("2. PERTENENCIA")
+#2.1.PRIMER EJERCICIO
+AVES=["PALOMA","CONDOR","GALLINA","PAVO","PAJARO"]
+S="CONDOR"
+if S in AVES:
+    print(S,"se encuentra en la lista")
+
+#2.2.SEGUNDO EJERCICIO
+MARCAS=["LENOVO","TOSHIBA","ACER","ASUS","HP"]
+R="LG"
+if R not in MARCAS:
+    print(R,"no se encuentra en la lista")
+
+#2.3.TERCER EJERCICIO}
+J=input("ingrese una fruta:")
+FRUTAS=["SANDIA","PLATANO","MANZANA","NARANJA","MANDARINA"]
+J=J.upper()
+if J in FRUTAS:
+    print(J,"si esta en la lista")
+else:
+    print(J,"no esta en la lista")
+
+#2.4.CUARTO EJERCICIO
+N=int(input("ingrese un numero:"))
+NUM=[1,2,3,4,5,6,7]
+if N not in NUM:
+    print("el numero",N,"no esta en la lista")
+else:
+    print("el numero",N,"esta en la lista")
+
+#2.5.QUINTO EJERCICIO
+L1=["LUNES","MARTES","MIERCOLES","JUEVES","VIERNES","SABADO","DOMINGO"]
+DIA="ENERO"
+if DIA in L1:
+    print(DIA,"esta en la lista")
+else:
+    print(DIA,"no esta en la lista")
+
+#2.6.SEXTO  EJERCICIO
+VOCALES=["A","E","I","O","U"]
+if "A" in VOCALES:
+    print("si esta en la lista")
+
+#2.7.SETIMO EJERCICIO
+NUM_IMPARES=[1,3,5,7,9,11,13]
+D=8
+if D in NUM_IMPARES:
+    print(D,"si esta en la lista")
+#2.8.OCTAVO EJERCICIO
+L2=[]
+F=0
+if F not in L2:
+    print("no esta en la lista")
+
+#2.9.NOVENO EJERCICIO
+A=input("ingrese su nombre:")
+NOMBRES=["JUAN","CARLOS","DIEGO","JEINER","JOEL","FERNANDO"]
+A=A.upper()
+if A in NOMBRES:
+    print("usted figura en el sistema")
+else:
+    print("usted no figura en el sistema")
+
+#2.10.DECIMOEJERCICIO
+NOTA=int(input("ingrese su nota:"))
+N=[12,13,8,19]
+if N in N:
+    print("su nota si esta en el registro")
+else:
+    print("su nota no se encuentra en el registro")
+
+print("3 CONCATENACION")
+#3.1.- PRIMER EJERCICIO
+S=[]
+T=[]
+M=S+T
+print(M)
+
+#3.2.- SEGUNDO EJERCICIO
+s=[]
+t=["ARROZ","AZUCAR","FIDEOS"]
+VI=s+t
+print(VI)
+
+#3.3.- TERCER EJERCICIO
+Q=[1,2,3,4]
+Y=[5,6,7,8,9]
+DF=Q+Y
+print(DF)
+
+#3.4.- CUARTO EJERCICIO
+AS=["A","B","C","D","E"]
+AZ=["F","G","Q","R"]
+SA=AS+AZ
+print(SA)
+
+#3.5.- QUINTO EJERCICIO}
+SI=["HOLA"]
+ASD=["MUNDO"]
+SR=SI+ASD
+print(SR)
+
+#3.6.- SEXTO EJERCICIO
+AX=["soy"]
+ASDP=["PERUANO"]
+AZXS=["DE CORAZON"]
+MNB=AX+ASDP+AZXS
+print(MNB)
+
+#3.7.- SETIMO EJERCICIO
+NUME=[1,2]
+ERO=[3,4,5,6]
+ZAS=[7,8]
+QAS=[9]
+CX=NUME+ERO+ZAS+QAS
+print(CX)
+
+#3.8.- OCTAVO EJERCICO
+NOTA1=[12,12,13,13]
+NOTA2=[14,14,15,18]
+P1=NOTA1+NOTA2
+print(P1)
+
+#3.9.- NOVENO EJERCICO
+L4=list("hoolaaaa")
+L5=list("COMO ESTASSSSSS")
+LL=L4+L5
+print(LL)
+
+#3.10.-DECIMO EJERCICIO
+ZX=input("ingrese una frase:")
+XZC=input("ingrese otra frase:")
+lista=list(ZX)
+lista1=list(XZC)
+OP=lista+lista1
+print(OP)
+
+print("4 COMPARACION")
+#4.1 EJERCICIO 1
+t2=[]
+t3=[]
+if t2==t3:
+    print("TRUE")
+
+#4.2 EJERCICIO 2
+T21=[1,2,3,4]
+T7=[1,2]
+if T21!=T7:
+    print("TRUE")
+
+#4.3 EJERCICIO 3
+T=[1,2,3,4]
+A1=[1,2,4,3]
+if T!=A1:
+    print("TRUE")
+
+#4.4 EJERCICIO 4
+T21=[1,2,3,4]
+T7=[1,2,3,4]
+if T21!=T7:
+    print("TRUE")
+else:
+    print("FALSE")
+
+#4.5 EJERCICIO 5
+SA=[]
+SE=[12,13]
+if SE>SA:
+    print("TRUE")
+
+#4.6 EJERCICIO 6
+T21=[12,13,14]
+T7=[1,2,3,4,5]
+if T21>T7:
+    print("TRUE")
+
+#4.7 EJERCICIO 7
+T21=[12,13,14]
+T7=[1,2,3,4,5]
+if T21<T7:
+    print("TRUE")
+else:
+    print("FALSE")
+
+#4.8 EJERCICIO 8
+A=[1]
+B=[2]
+if A==B:
+    print("FALSE")
+
+#4.9 EJERCICO 9
+C=[30000,12334,1234]
+Z=[1,2,3,4,54,6,4,5,6]
+if C>Z:
+    print("TRUE")
+
+#4.10 EJERCICIO 10
+L11=[input("ingrese un valor:")]
+L22=[input("ingrese otro valor")]
+if L11==L22:
+    print("LOS NUMEROS SON IGUALES")
+if L11>L22:
+    print(L11,"es mayor que",L22)
+else:
+    print(L22, "es mayor que", L11)
+
+
+print("5 INDEXACION")
+#5.1 EJERCICIO 1
+L=[1,3]
+A=L[1]
+print(A)
+
+#5.2 EJERCICIO 2
+T=["A","B","X","C"]
+RT=T[1]
+print(RT)
+
+#5.3 EJERCICIO 3
+L=[1,3]
+A=L[1]
+print(A)
+S=["HOLA","MUNDO","BELLO"]
+Z=S[2]
+print(Z)
+
+#5.4 EJERCICIO 4
+Q=["a","e","i","o","u"]
+if Q[3]=="o":
+    print("TRUE")
+
+#5.5 EJERCICIO 5
+W=[1,2,3,4,5,]
+a=W[0]
+b=W[1]
+c=W[4]
+print(a)
+print(b)
+print(c)
+
+#5.6 EJERCICIO 6
+DS=["HOLA","COMO","ESTAS","AMIGO"]
+print(DS[2])
+
+#5.7 EJERCICIO 7
+DT=["A","E","I","O","U"]
+SA=DT[4]
+print(SA)
+
+#5.8 EJERCICIO 8
+W=[12,13,1,4]
+print(W[0])
+
+#5.9 EJERCICO 9ç
+B=int(input("ingrese una posicion:"))
+V=[1,2,3,4,5,6,7,8,9]
+print(V[B])
+
+#5.10 EJERCICIO 10
+E=input("ingrese una fruta:")
+P=int(input("posicion:"))
+E=E.upper()
+FRUTA=["MANZANA","NARANJA","SANDIA","UVA"]
+if E in FRUTA:
+    if FRUTA[P]==E:
+        print(E)
+    else:
+        print("error")
+else:
+    print("error")
+print("6 CORTADO")
+#6.1 EJERCICIO 1}
+A=[1,2,3]
+S=A[1:2]
+print(S)
+#6.2 EJERCICIO 2
+L1=[13,24,33,4,5]
+print(L1[:])
+
+#6.3 EJERCICIO 3
+L2=[1,2,3,4,5]
+print(L2[:3])
+
+#6.4 EJERCICIO 4
+L3=[1,2,32,42,5,6,7,8,9,12]
+PO=L3[1:3:3]
+print(PO)
+
+#6.5 EJERCICIO 5
+L4=["ANA","ELEF","INTER","OTRO","TU"]
+PI=L4[2:3:-1]
+print(PI)
+
+#6.6 EJERCICIO 6
+L5=["ARCO","ENTRE","I","OLA","U"]
+PI=L5[:3:-1]
+print(PI)
+
+#6.7 EJERCICIO 7
+L4=["LA","FA","MI","DO","SI"]
+PI=L4[:-1]
+print(PI)
+
+#6.8 EJERCICIO 8
+L3=[1,2,3,4,5,6,7,8,9,12]
+PO=L3[::-1]
+print(PO)
+
+#6.9 EJERCICO 9
+A=["ENE","FEB","MAR","ABR","MAY"]
+Z=A[1:3]
+print(Z)
+#6.10 EJERCICIO 10
+A=["E","FB","MR","AR","Y"]
+Z=A[:3:-1]
+print(Z)
+
+print("7 LONGITUD")
+#7.1 EJERCICIO 1
+R=[]
+A=len(R)
+print(A)
+
+#7.2 EJERCICIO 2
+S=[1]
+B=len(S)
+print(B)
+
+#7.3 EJERCICIO 3
+R2=[1,2,3,4,5]
+R1=len(R2)
+print(R1)
+
+#7.4 EJERCICIO 4
+R3=["A","E","I","O","U"]
+A1=len(R3)
+print(A1)
+
+#7.5 EJERCICIO 5
+R5=["ARAÑA","GUSANO","LOMBRIZ","ORUGA","GRILLO"]
+A2=len(R5)
+print(A2)
+
+#7.6 EJERCICIO 6
+A=[1,2,3,4,5,6,78,23]
+S=A[:5]
+print(len(S))
+
+#7.7 EJERCICIO 7
+A1=[11,22,33,44,55,66,77,88]
+S1=A1[:5:-1]
+print(len(S1))
+
+#7.8 EJERCICIO 8
+L4=["LA","FA","MI","DO","SI"]
+P=L4[1:4:-1]
+a=len(P)
+print(a)
+
+#7.9 EJERCICO 9
+A=list("DINOSAURIO")
+s=len(A)
+print(s)
+
+#7.10 EJERCICIO 10
+S=list("HOLA")
+R=list("MUNDO AJENO")
+W=S+R
+S1=len(W)
+print(S1)
+
+print("8 ITERACION")
+#8.1 EJERCICIO 1
+L=[1,3,4,5,6]
+for i in L:
+    print(i)
+
+#8.2 EJERCICIO 2
+R3=["A","E","I","O","U"]
+for letra in R3:
+    print(letra)
+
+#8.3 EJERCICIO 3
+G=[12,13,14,15,16]
+for NOTA in G:
+    print(NOTA)
+
+#8.4 EJERCICIO 4
+NOTASW=[12,13,15,16,20]
+A=0
+for nota in NOTASW:
+    A=A+nota
+    S=A/5
+print("TU PROMEDIO ES:",S)
+#8.5 EJERCICIO 5
+R3=["A","E","I","O","U"]
+A=0
+for letra in R3:
+    A=A+1
+print("HAY",A,"ELEMENTOS")
+
+#8.6 EJERCICIO 6
+S=[1,2,3,45,5,6]
+for i in S:
+    A = int(input("ingrese numero:"))
+    if A in S:
+       print("SI ESTA EN LA LISTA")
+    else:
+        print("NO ESTA EN LA LISTA")
+#8.7 EJERCICIO 7
+S=[111,222,33,44,444]
+for i in S:
+    P=i-100
+    print(P)
+
+#8.8 EJERCICIO 8
+A=list("LA SANDIA ES DULCE")
+for palabra in A:
+    print(palabra)
+
+#8.9 EJERCICO 9
+L12=[1,3,4,5,6]
+A=0
+for i in L12:
+    A=A+i
+print("LA SUMA ES",A)
+
+#8.10 EJERCICIO 10
+L12=[1,3,4,5,6]
+A=0
+for i in L12:
+    A=A+1
+print("HAY",A,"ELEMENTOS EN LA LISTA")
+
+print("9 BUSQUEDA")
+#9.1 EJERCICIO 1
+Q=[1,2,3]
+S=Q.index(1)
+print(S)
+
+#9.2 EJERCICIO 2
+R3=["A","E","I","O","U"]
+A=R3.index("A")
+print(A)
+
+#9.3 EJERCICIO 3
+R7=["ANA","ELENA","ISABEL","OLGA","URSULA"]
+Z=R7.index("ELENA")
+print(Z)
+
+#9.4 EJERCICIO 4
+T=[0,1,2,2,3,3]
+print(T.index(2))
+
+#9.5 EJERCICIO 5
+S=list("HOLA MUNDO HERMOSO")
+print(S.index("H"))
+
+#9.6 EJERCICIO 6
+R=list("EN ESTOS DIAS DARE EXAMEN")
+print(R.index("D"))
+
+#9.7 EJERCICIO 7}
+L111=[1,1,1,1,1,1]
+P=L111.index(1)
+print(P)
+
+#9.8 EJERCICIO 8
+Q1=int(input("ingrese un numero:"))
+L=[1,2,3,4,5,6,7,8]
+if Q1 in L:
+    A=L.index(Q1)
+    print(A)
+else:
+    print("ESTE NUMERO NO ESTA EN LA LISTA")
+
+#9.9 EJERCICO 9}
+W=input("Ingrese una marca de PC:")
+MPC=["ACER","LENOVOI","HP","ASUS","TOSHIBA","SAMSUNG"]
+W=W.upper()
+if W in MPC:
+    AS=MPC.index(W)
+    print(AS)
+else:
+    print("ESTA MARCA NO ESTA EN LA LISTA")
+
+#9.10 EJERCICIO 10
+S=list("NOMBRE")
+print(S.index("M"))
+
+print("10 CONTEO")
+#10.1 EJERCICIO 1
+T=[1,2]
+A=T.count(1)
+print(A)
+
+#10.2 EJERCICIO 2
+T=[1,2]
+A=T.count(1)
+B=T.count(2)
+print(A)
+print(B)
+
+#10.3 EJERCICIO 3
+T1=[1,1,1,1,1,2,3,4]
+print(T1.count(1))
+
+#10.4 EJERCICIO 4
+R=["A","B","C","A","A"]
+print(R.count("A"))
+
+#10.5 EJERCICIO 5
+Z=["ALA","ENANO","BOA","SAPO"]
+AS=Z.count("A")
+print(AS)
+
+#10.6 EJERCICIO 6
+Z=list("BLABLABLALALALALALA")
+A=Z.count("B")
+A1=Z.count("A")
+A2=Z.count("L")
+print(A)
+print(A1)
+print(A2)
+
+#10.7 EJERCICIO 7}
+L=list("MARIA ESTA ACABANDO SU TAREA")
+S=L.count("A")
+print(S)
+
+#10.8 EJERCICIO 8
+I=int(input("ingrese un numero:"))
+L=[1,1,1,2,2,2,3,3,4,5,6,5,2,3,4,5,6]
+if I in L:
+    S=L.count(I)
+    print("HAY",S,"NUMEROS",I)
+else:
+    print(I,"no esta en la lista")
+
+#10.9 EJERCICO 9
+U=input("Ingrese una letra:")
+H=list("EL MUNDO ES ANCHO Y AJENO")
+U=U.upper()
+print(H.count(U))
+
+#10.10 EJERCICIO 10
+S=[1]
+U=S.count(1)
+print(U)
+
+print("11 MAX Y MIN")
+#11.1 EJERCICIO 1
+A=[1,3]
+S=max(A)
+print(S)
+
+#11.2 EJERCICIO 2
+A1=[1,3]
+S1=min(A1)
+print(S1)
+
+#11.3 EJERCICIO 3
+Q=[1,2,3,4]
+R=[2,4,5,6,7]
+A=Q+R
+print(max(A))
+print(min(A))
+
+#11.4 EJERCICIO 4
+AS=["V","X","O","S"]
+AZ=max(AS)
+AX=min(AS)
+print(AZ)
+print(AX)
+
+#11.5 EJERCICIO 5
+P=[1,2,3,4]
+A=[2,3,4,5]
+S=min(P)+min(A)
+D=max(P)-min(A)
+AS=S*D
+print(AS)
+
+#11.6 EJERCICIO 6
+NOTAS1=[12,13,18,19]
+print("su minima nota es:",min(NOTAS1))
+print("SU MAXIMA NOTA ES :",max(NOTAS1))
+
+#11.7 EJERCICIO 7
+DP=[1,2,3,4]
+A=[2,3,4,5]
+S=min(P)+max(A)
+D=max(P)-min(A)
+A=S**D
+print(A)
+
+#11.8 EJERCICIO 8
+S=["ANA","NONA","XIOMARA"]
+print(max(S))
+print(min(S))
+
+#11.9 EJERCICO 9
+S=list("INFINITAMENTE")
+print(min(S))
+print(max(S))
+
+#11.10 EJERCICIO 10
+Y=int(input("ingrese su edad:"))
+L1=[17,65]
+if Y<=min(L1):
+    print("usted es menor de edad")
+if Y>=max(L1):
+    print("usted excede los 65 años")
+else:
+    print("usted es mayor de edad")
+
+print("12 MULTIPLICACION")
+#12.1 EJERCICIO 1
+A=[]
+S=3*A
+print(S)
+
+#12.2 EJERCICIO 2
+A=[1,2]
+S=3*A
+print(S)
+
+#12.3 EJERCICIO 3
+A1=[1,1,1,1]
+S1=4*A1
+print(S1)
+
+#12.4 EJERCICIO 4
+B=["A","B","C","F"]
+print(5*B)
+
+#12.5 EJERCICIO 5
+Z=["ANA","ROSA"]
+print(3*Z)
+
+#12.6 EJERCICIO 6
+Z=["ANA","ROSA"]
+Z*=2
+print(Z)
+
+#12.7 EJERCICIO 7
+S=int(input("ingrese un valor:"))
+L=[1,2,3,4]
+print(L*S)
+
+#12.8 EJERCICIO 8
+P=list("HOLA MUNDOO")
+P*=3
+print(P)
+
+#12.9 EJERCICO 9
+L=[1,"A",2,"B",3,"D"]
+print(L*2)
+
+#12.10 EJERCICIO 10
+l1=[1,2,3,4]
+print(L*0)
+
+print("13 ELIMINACION")
+#13.1 EJERCICIO 1
+R=[1,2,3,4,5,6,7]
+del R[:3]
+print(R)
+
+#13.2 EJERCICIO 2
+E=[1,2,3,4,5,6,7]
+del E[1:4:2]
+print(E)
+
+#13.3 EJERCICIO 3
+L=list("HOOLA MUNDOO")
+del L[1:9]
+print(L)
+
+#13.4 EJERCICIO 4
+LISTA=["ANA","ROSA","CARLOS","CARMEN","ESTER"]
+del LISTA[2]
+print(LISTA)
+
+#13.5 EJERCICIO 5
+FRUTA=["MANZANA","PERA","PAPAYA","MANGO"]
+FRUTA[1:3]=[]
+print(FRUTA)
+
+#13.6 EJERCICIO 6
+NUMS=[123,124,125,126,127,1234]
+NUMS[:]=[]
+print(NUMS)
+
+#13.7 EJERCICIO 7
+Z=list("UNIVERSIDAD NACIONAL")
+del Z[1:9:2]
+print(Z)
+
+#13.8 EJERCICIO 8}
+lista=["HOLA","MAMA","TE AMO"]
+del lista[1]
+print(lista)
+
+#13.9 EJERCICIO 9
+print("L=[12,13,14,15,16]")
+A=int(input("indique la posicion del numero que  desea eliminar:"))
+L=[12,13,14,15,16]
+del L[A]
+print(L)
+
+#13.10 EJERCICIO 10
+S=[12,1,34,56,77,23]
+del S[2:4:2]
+print(S)
+
+print("14 REMPLAZO")
+#14.1 EJERCICIO 1
+A=[1,2,3,4]
+A[2]=1
+print(A)
+
+#14.2 EJERCICIO 2
+A1=[1,2,3,4]
+A1[0]=6
+A1[3]=7
+print(A1)
+
+#14.3 EJERCICIO 3}
+S=["A","B","I","O","U"]
+S[1]="E"
+print(S)
+
+#14.4 EJERCICIO 4
+FRAS=["HOLA","QUIERIA","DECIR","JAJAJAJA"]
+FRAS[3]="LO SIENTO"
+print(FRAS)
+
+#14.5 EJERCICIO 5
+L=list("HERMOSA DAMA")
+L[1:3]="T"
+print(L)
+
+#14.6 EJERCICIO 6
+o=list("SERA LA ULTIMA VEZ Q NOS VEAMOS")
+o[:-1]="FREE"
+print(o)
+
+#14.7 EJERCICIO 7
+A=list("123456789")
+A[:3:]="00000"
+print(A)
+
+#14.8 EJERCICIO 8
+A2=list("rararararar")
+A2[1:2:2]="0"
+print(A2)
+
+#14.9 EJERCICO 9
+print("L=[12,13,14,15,16]")
+SA=int(input("indique la posicion del numero q desea cambiar:"))
+SE=int(input("indique el nuevo numero para cambiar:"))
+L=[12,13,14,15,16]
+L[SA]=SE
+print(L)
+
+#14.10 EJERCICIO 10
+T=[""]
+T[0]="HOLA"
+print(T)
+
+print("15 AGREGADO")
+#15.1 EJERCICIO 1
+S=[]
+S.append("UNPRG")
+print(S)
+
+#15.2 EJERCICIO 2
+A=[1,2]
+A.append(2)
+print(A)
+
+#15.3 EJERCICIO 3
+VC=["A","E","I","O"]
+VC.append("U")
+print(VC)
+
+#15.4 EJERCICIO 4
+SD=["HOLA","COMO"]
+SD.append("ESTAS")
+SD.append("AMIGASO")
+print(SD)
+
+#15.5 EJERCICIO 5
+lista1=[1,2,3,4,"...."]
+lista1.append("UNPRG")
+print(lista1)
+
+#15.6 EJERCICIO 6
+s=list("UNIVERSIDAD NACIONAL ")
+s.append("P,E,D,R,O, ,R,U,I,Z, ,G,A,L,L,O")
+print(s)
+
+#15.7 EJERCICIO 7
+S=int(input("INGRESE UN NUMERO PARA AGREGAR A LA LISTA:"))
+A=[1,2,3,4,5,6,7]
+A.append(S)
+print(A)
+
+#15.8 EJERCICIO 8
+A=[1,2]
+A1=[5,8]
+A.append(A1)
+print(A)
+
+#15.9 EJERCICO 9
+A=[1,4]
+T=A[0]
+A.append(T)
+print(A)
+
+#15.10 EJERCICIO 10
+print("L=[]")
+L=[]
+N=int(input("CUANTOS ELEMENTOS DESEA QUE CONTENGA SU LISTA:"))
+for i in range(1,N+1):
+    S=int(input("ingrese un numero para agrgar a la lista:"))
+    L.append(S)
+print(L)
+
+print("16 ANULACION")
+#16.1 EJERCICIO 1
+A=[]
+A.clear()
+print(A)
+
+#16.2 EJERCICIO 2
+A=[1,2,3,4,5,66,4]
+A.clear()
+print(A)
+
+#16.3 EJERCICIO 3
+C=list("EL LUNES TENEMOS CALSES DE ANALISIS")
+C.clear()
+print(C)
+
+#16.4 EJERCICIO 4
+Z=["A","F","G","C"]
+Z.clear()
+print(Z)
+
+#16.5 EJERCICIO 5
+T=["ALA","FARO","GATO","CINTA"]
+del T[:]
+print(T)
+
+#16.6 EJERCICIO 6
+A=[1,2,34,[1,2,3]]
+A.clear()
+print(A)
+
+#16.7 EJERCICIO 7ç
+T1=["ene","feb","marz","abr","may","jun"]
+del T1[:]
+print(T1)
+
+#16.8 EJERCICIO 8
+Z=[1,2,2,3,3,4,4,44,2,2,2,22,2]
+del Z[:]
+print(Z)
+
+#16.9 EJERCICO 9ç
+L=list("ASDFGHJKLÑQWERTYUIOPÂSDFGHJKLÑ")
+L.clear()
+print(L)
+
+#16.10 EJERCICIO 10
+print("L=[1,2,3,4,5,6,7,8,9]")
+print("L1=[10,11,12,13,14,15]")
+A=input("QUE LISTA DESEA VACIAR:")
+A=A.upper()
+L=[1,2,3,4,5,6,7,8,9]
+L1=[10,11,12,13,14,15]
+if A=="L":
+    L.clear()
+    print(L)
+    print(L1)
+elif A=="L1":
+    L1.clear()
+    print(L1)
+    print(L)
+else:
+    print("INGRESE DATOS CORRECTOS ")
+
+print("17 CLONADO")
+#17.1 EJERCICIO 1
+a=[]
+X=a.copy()
+print(X)
+
+#17.2 EJERCICIO 2
+A=[1,2,3,4,5,56,3]
+X=A.copy()
+print(X)
+
+#17.3 EJERCICIO 3
+A=[1,2,3,4,5,56,3]
+X=A.copy()
+C=X+A
+print(C)
+
+#17.4 EJERCICIO 4
+L=list("PEDRO RUIZ GALLO")
+Z=L.copy()
+print(Z)
+
+#17.5 EJERCICIO 5
+J=["A","B""M","N"]
+x=J.copy()
+print(x)
+
+#17.6 EJERCICIO 6
+X=[1,1,2,3,4,5,6,67,7]
+Z=X[:]
+print(Z)
+
+#17.7 EJERCICIO 7ç
+CAD=list("CADENAS Y SUBCADENAS")
+C=CAD[:]
+print(C)
+
+#17.8 EJERCICIO 8
+SIM=[12,13,13.3,12.4]
+A=SIM[:]
+print(A)
+#17.9 EJERCICO 9
+CAD=list("CADENAS Y SUBCADENAS")
+A=CAD.append("EN PYTHON")
+A=CAD[:]
+print(A)
+
+#17.10 EJERCICIO 10
+SAD=[1,2,3,4]
+SAD[1]=3
+D=SAD.copy()
+print(D)
+
+print("18 EXTENCION")
+#18.1 EJERCICIO 1
+S=[]
+T=[]
+S.extend(T)
+print(S)
+
+#18.2 EJERCICIO 2
+T=[]
+S=[1,2,3,4,5]
+T.extend(S)
+print(T)
+
+#18.3 EJERCICIO 3
+S=[1,2,3,4]
+T=[]
+S.extend(T)
+print(S)
+
+#18.4 EJERCICIO 4
+A=["A","B","C","D","E","F"]
+B=["HOLA","OLA","FREEE"]
+A.extend(B)
+B.extend(A)
+print(A)
+print(B)
+
+#18.5 EJERCICIO 5
+A=list("UNIVERSIDAD NACIONAL")
+B=list("PEDRO ")
+C=list("RUIZ GALLO")
+A.extend(B)
+A.extend(C)
+print(A)
+
+#18.6 EJERCICIO 6
+G=list("HOLAMUNDO")
+D=[12345]
+E=["ESTAMOS","DE","VISITA"]
+G.extend(D)
+G.extend(E)
+print(G)
+
+#18.7 EJERCICIO 7
+A=[1,2,3,4,5]
+X=A.copy()
+A.extend(X)
+print(A)
+
+#18.8 EJERCICIO 8
+W=[1,2,3,4,5]
+W.append("NUMERSO")
+W.extend(W)
+print(W)
+
+#18.9 EJERCICO 9
+A=["ANA","PASA"]
+A.extend(A)
+print(A)
+
+#18.10 EJERCICIO 10
+S=list("JEINER")
+T=S[1]
+S.extend(T)
+print(S)
+
+print("19 INSERCION")
+#19.1 EJERCICIO 1
+T=[1,2]
+T.insert(1,"A")
+print(T)
+
+#19.2 EJERCICIO 2
+TU=[]
+TU.insert(0,"HOLA")
+print(TU)
+
+#19.3 EJERCICIO 3
+FRUTA=["PLATANO","SANDIA","MELON","UVA"]
+FRUTA.insert(2,"MANZANA")
+print(FRUTA)
+
+#19.4 EJERCICIO 4
+S=list("HOOLA AMIGOS")
+S.insert(3,"OOO")
+print(S)
+
+#19.5 EJERCICIO 5
+TR=[1,2,3,4,5]
+TE=[2,3,4,5]
+TR.insert(3,TE)
+print(TR)
+
+#19.6 EJERCICIO 6
+TR=[1,2,3,4,5]
+TE=[2,3,4,5]
+Q=[7,9,8,6,3]
+TR.insert(0,Q)
+TR.insert(3,TE)
+print(TR)
+
+#19.7 EJERCICIO 7
+SA=["PLATANO","SANDIA","MELON","UVA"]
+TE=[2,3,4,5]
+S=list("HOLA MUNDO")
+AS=[]
+SA.insert(3,AS)
+SA.insert(0,S)
+SA.insert(3,TE)
+SA.insert(2,SA)
+print(SA)
+
+#19.8 EJERCICIO 8ç
+L=list("ESTAREMOSAGUSTO")
+L1=list("CONTUPARTICIPACION")
+L.insert(15,L1)
+print(L)
+
+#19.9 EJERCICO 9
+J=input("QUE ELEMENTO DESEA INSERTAR AL FINAL DE LA LISTA:")
+L=["A",1,"B","C",3,"HOLA"]
+L.insert(6,J)
+print(L)
+
+#19.10 EJERCICIO 10
+J1=input("QUE ELEMENTO DESEA INSERTAR A LA LISTA:")
+T=int(input("EN QUE POSICION DESEA AGREGARLO"))
+L1=["A",1,"B","C",3,"HOLA"]
+J1=J1.upper()
+L1.insert(T,J1)
+print(L1)
+
+print("20 EXTRACCION")
+#20.1 EJERCICIO 1
+T=[1]
+X=T.pop(0)
+print(X)
+
+#20.2 EJERCICIO 2
+T=[2,3,1]
+X=T.pop(0)
+print(X)
+
+#20.3 EJERCICIO 3
+FRUT=["MANZANA","PERA","MELON","SANDIA"]
+Z=FRUT.pop(3)
+print(Z)
+
+#20.4 EJERCICIO 4
+FRUT=["MANZANA","PERA","MELON","SANDIA"]
+Z=FRUT.pop(3)
+X=FRUT.pop(2)
+print(Z)
+print(X)
+
+#20.5 EJERCICIO 5
+D=list("UTILES ESCOLARES")
+O=D.pop(1)
+print(O)
+
+#20.6 EJERCICIO 6
+D1=list("UNPRG")
+O1=D1.pop(0)
+print(O1)
+
+#20.7 EJERCICIO 7
+LIST=[1,2,3,4,[23,24,25]]
+S=LIST.pop(4)
+print(S)
+
+#20.8 EJERCICIO 8
+LISTA=[1,2,3,4,5,6,7]
+LISTA1=[3,4,5,6]
+LISTA2=LISTA+LISTA1
+P=LISTA2.pop(4)
+print(LISTA2)
+print(P)
+
+#20.9 EJERCICO 9
+L=[]
+for i in range(1,4):
+    X=input("ingrese un dato:")
+    L.append(X)
+lt=L.pop(0)
+print("eliminamos",lt)
+
+#20.10 EJERCICIO 10
+print("LISTA=[1,2,3,4,5,6]")
+S=int(input("QUE POCISION DESEA ELIMINAR:"))
+LISTA=[1,2,3,4,5,6]
+Y=LISTA.pop(S)
+print("SE ELIMINO EL",Y)
+
+print("21 SEPARACION")
+#21.1 EJERCICIO 1
+T=[1,2,3,4,5,1]
+T.remove(1)
+print(T)
+
+#21.2 EJERCICIO 2
+A=[1,2,3,4,5,1]
+A.remove(2)
+print(A)
+
+#21.3 EJERCICIO 3
+M=["A","A","A","B","C"]
+M.remove("A")
+print(M)
+
+#21.4 EJERCICIO 4
+F=[1,2,3,3,4]
+F.remove(3)
+print(F)
+
+#21.5 EJERCICIO 5
+S=list("HOLAMUNDO")
+S.remove("H")
+print(S)
+
+#21.6 EJERCICIO 6
+AS=list("ARRTIFICIAL")
+AS.remove("R")
+print(AS)
+
+#21.7 EJERCICIO 7
+T=[0,5,6,[1,2,3,4]]
+T.remove([1,2,3,4])
+print(T)
+
+#21.8 EJERCICIO 8
+LIST=list("ABCDEFG")
+print(LIST)
+U=input("que letra desea eliminar:")
+U=U.upper()
+LIST.remove(U)
+print(LIST)
+
+#21.9 EJERCICO 9
+LIST=list("TODOSUNIDOS")
+print(LIST)
+U=input("que letra desea eliminar:")
+U=U.upper()
+if U in LIST:
+    LIST.remove(U)
+    print(LIST)
+else:
+    print("ESTA LETRA NO ESTA EN LA LISTA")
+
+#21.10 EJERCICIO 10
+print("NOTAS=[12,13,14,17]")
+T=int(input("QUE NOTA DESEA ELIMINAR:"))
+NOTAS=[12,13,14,17]
+NOTAS.remove(T)
+print(NOTAS)
+
+print("22 REVERSA")
+#22.1 EJERCICIO 1
+R=[1,2]
+R.reverse()
+print(R)
+
+#22.2 EJERCICIO 2
+R=[1,2,3,4,5,6,7,8,9]
+R.reverse()
+print(R)
+
+#22.3 EJERCICIO 3
+S=["HOLA","COMO","ESTAS"]
+S.reverse()
+print(S)
+
+#22.4 EJERCICIO 4
+E=["A","E","I","O","U"]
+E.reverse()
+print(E)
+
+#22.5 EJERCICIO 5
+Z=list("ABCDEFGHIJKLMNÑOPQRSTUWXYXZ")
+Z.reverse()
+print(Z)
+
+#22.6 EJERCICIO 6
+D=list("1234554321")
+D.reverse()
+print(D)
+
+#22.7 EJERCICIO 7
+H=list("HOLA")
+H.reverse()
+print(H)
+
+#22.8 EJERCICIO 8
+M=[1,3,4,5,6]
+N=[4,5,6,7]
+a=N+M
+a.reverse()
+print(a)
+
+#22.9 EJERCICO 9
+print("L1=[1,2,3,4,5,6,7,8,9]")
+print("L2=[A,E,I,O,U]")
+L=input("que lista desea revertirla:")
+L=L.upper()
+L2=["A","E","I","O","U"]
+L1=[1,2,3,4,5,6,7,8,9]
+if L=="L1":
+    L1.reverse()
+    print(L1)
+elif L=="L2":
+    L2.reverse()
+    print(L2)
+else:
+    print("infrese datos correctos")
+
+#22.10 EJERCICIO 10
+I=list(input("INGRESE SU NOMBRE:"))
+I.reverse()
+print("SU NOMBRE AL REVES:",I)
+
+print("23 ORDENADO")
+#23.1 EJERCICIO 1
+R=[5,4]
+R.sort()
+print(R)
+
+#23.2 EJERCICIO 2
+R=[5,4,3,5,6,10]
+R.sort()
+print(R)
+
+#23.3 EJERCICIO 3
+R1=[5,4,9,9,8,7,3,5,7]
+R1.sort()
+print(R1)
+
+#23.4 EJERCICIO 4
+R2=list("ANBFCRTE")
+R2.sort()
+print(R2)
+
+#23.5 EJERCICIO 5
+lista=["A","H","C","B"]
+lista.sort()
+print(lista)
+
+#23.6 EJERCICIO 6
+T=[1,9,3,2,5,4]
+A=[10,19,16,3]
+S=A+T
+S.sort()
+print(S)
+
+#23.7 EJERCICIO 7
+i=list(input("ingresse uns serie de letras:"))
+i.sort()
+print(i)
+
+
+#23.8 EJERCICIO 8
+L1=[]
+for i in range(1,5):
+    S=int(input("ingrese sus nota:"))
+    L1.append(S)
+    L1.sort()
+print(L1)
+
+#23.9 EJERCICO 9
+list=["HOLA","ALEX","VAMONOS"]
+list.sort()
+print(list)
+
+#23.10 EJERCICIO 10
+L=[]
+X=int(input("cuantos nombres desea ingresar:"))
+for i in range(1,X+1):
+    A=input("INGRESE UN NOMBRE:")
+    L.append(A)
+    L.sort()
+print(L)
+#EJERCICIOS DE OPERACIONES CON LISTAS FINALIZADOS
