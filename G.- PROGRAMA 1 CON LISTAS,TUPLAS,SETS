@@ -1,0 +1,19 @@
+print("##  TABLA DE MULTIPLAR DE UN NUMERO ##")
+L=[] # OPERACION 1 CREACION DE UNA LISTA VACIA
+TUPLA=(0,1,2,3,4,5,6,7,8,9,10,11,12) # OPERACION 2 CREACION DE UNA TUPLA CON VALORES 0-12
+SET=set() #OPERACION 3 CREACION DE UN SET VACIO
+NUM=int(input("INGRESE UN NUMERO:"))
+print("####################################")
+for i in TUPLA: # OPERACION 4  DE ITERACION DE TUPLA EN SECUENCIA
+    SET.add(NUM) #OPERACION 5 AGREGADO (AGREGA EL VALOR INGRESADO AL SET)
+    MUL=i*NUM
+    print({i},"X",SET,"=",{MUL})
+    L.append(MUL) #OPERACION 6 AGREGADO (AGREGA LOS VALORES DE MUL A LA LISTA "L"
+    LON=len(L) #OPERACION 7 LEN (DA LA LONGITUD DE LA LISTA "L")
+print("####################################")
+print("ESTA ES LA LISTA DE LOS RESULTADOS",L)
+print("LA LISTA CONTIENE",LON," ELEMENTOS")
+print("####################################")
+
+
+
